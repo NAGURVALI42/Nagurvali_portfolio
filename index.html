@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nagurvali Shaik — Full Stack Developer & Freelancer</title>
+  <meta name="description" content="Portfolio of Nagurvali Shaik — Full Stack Developer, Data Analyst & Freelancer based in Hyderabad, India."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<div id="cd" class="cd"></div>
+<div id="cr" class="cr"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav-row">
+    <a href="#hero" class="brand" id="brand">N<span>S</span></a>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#awards"     class="nav-link">Awards</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="NAGURVALI_RESUME.pdf" class="nav-cv" download id="navCV">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Resume
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero" class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text" data-r>
+      <!-- status -->
+      <div class="status-bar">
+        <span class="status-dot"></span>
+        <span>Available for Full-Time &amp; Freelance</span>
+      </div>
+
+      <h1 class="hero-h1">
+        <span class="h1-line1">Nagurvali</span>
+        <span class="h1-line2">Shaik</span>
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-iam">I am a</span>
+        <div class="role-ticker" id="roleTicker">
+          <span class="role-word" id="roleWord">Full Stack Developer</span>
+        </div>
+      </div>
+
+      <p class="hero-desc">
+        Full Stack Developer and Data Analyst building production-grade web applications, REST APIs, and analytics dashboards. Open to full-time positions and freelance projects worldwide.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="cta-solid" id="viewWork">View Projects</a>
+        <a href="#contact"  class="cta-ghost" id="hireMe">Hire Me</a>
+      </div>
+
+      <div class="hero-links">
+        <!-- GitHub -->
+        <a href="https://github.com/NAGURVALI42" target="_blank" class="icon-link" id="hl-gh" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/nagurvali-shaik-505469288/" target="_blank" class="icon-link" id="hl-li" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/nagurvali42/" target="_blank" class="icon-link" id="hl-ig" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- Mail -->
+        <a href="mailto:nagurvali219@gmail.com" class="icon-link" id="hl-ml" title="Gmail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <!-- Phone -->
+        <a href="tel:+919392055176" class="icon-link" id="hl-ph" title="Call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <strong class="stat-n" data-n="3">0</strong>
+          <span>Internships</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <strong class="stat-n" data-n="4">0</strong>
+          <span>Projects</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <strong>9.06</strong>
+          <span>CGPA</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <strong class="stat-n" data-n="2">0</strong>
+          <span>Awards</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO -->
+    <div class="hero-photo" data-r data-d="150">
+      <div class="photo-scene">
+        <div class="photo-glow-tl"></div>
+        <div class="photo-glow-br"></div>
+        <div class="photo-card" id="photoCard">
+          <img src="Pictur2.jpeg" alt="Nagurvali Shaik — Full Stack Developer" class="photo-img"/>
+        </div>
+        <div class="photo-badge">
+          <span class="badge-pulse"></span>
+          Available for Hire
+        </div>
+        <!-- corner brackets -->
+        <i class="corner c-tl"></i>
+        <i class="corner c-tr"></i>
+        <i class="corner c-bl"></i>
+        <i class="corner c-br"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <span class="sec-label">About</span>
+      <h2 class="sec-title">The Developer <span class="accent">Behind the Code</span></h2>
+    </div>
+
+    <div class="cards-3" data-r>
+
+      <div class="card">
+        <div class="card-icon-wrap">
+          <svg class="card-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <h3>Who I Am</h3>
+        <p>B.Tech CSE student at SIMATS University (2026) with a 9.06 CGPA. I build full-stack web applications, REST APIs, and analytics dashboards — and take on freelance projects for clients globally.</p>
+        <p>Star Performer at Excelerate — awarded a <strong>$1,000 Performance Scholarship</strong> for outstanding data analytics work.</p>
+        <div class="contact-pills">
+          <a href="mailto:nagurvali219@gmail.com" class="c-pill" id="ab-ml">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            nagurvali219@gmail.com
+          </a>
+          <a href="tel:+919392055176" class="c-pill" id="ab-ph">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +91 93920 55176
+          </a>
+          <span class="c-pill loc-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Guntur, Andhra Pradesh
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon-wrap">
+          <svg class="card-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3>Education</h3>
+        <div class="edu-item">
+          <div class="edu-title">B.Tech — Computer Science</div>
+          <div class="edu-meta">SIMATS University &nbsp;·&nbsp; 2022–2026</div>
+          <div class="edu-gpa">CGPA <span>9.06</span></div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-title">Intermediate (MPC)</div>
+          <div class="edu-meta">Narayana Junior College &nbsp;·&nbsp; 2020–2022</div>
+          <div class="edu-gpa">CGPA <span>9.52</span></div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-title">Secondary School Certificate</div>
+          <div class="edu-meta">Veenus High School &nbsp;·&nbsp; 2019–2020</div>
+          <div class="edu-gpa">CGPA <span>9.5</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon-wrap">
+          <svg class="card-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>What I Build</h3>
+        
+        <div class="build-tags">
+          <span class="build-tag"><i></i>Full-Stack Apps</span>
+          <span class="build-tag"><i></i>REST APIs</span>
+          <span class="build-tag"><i></i>Data Analytics</span>
+          <span class="build-tag"><i></i>BI Dashboards</span>
+          <span class="build-tag"><i></i>Flutter Dev</span>
+          <span class="build-tag"><i></i>Machine Learning</span>
+        </div>
+        
+        <div class="build-modes">
+          <span class="b-mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"></path></svg> Remote</span>
+          <span class="b-mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg> Freelance</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPERIENCE ══════════ -->
+<section id="experience" class="section exp-section">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <span class="sec-label">Experience</span>
+      <h2 class="sec-title">Professional <span class="accent">History</span></h2>
+    </div>
+
+    <div class="exp-stack">
+
+      <div class="exp-card card" data-r>
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Web Development Intern</h3>
+            <div class="exp-company">Jalenthra Private Limited</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-period">Dec 2025 – Present</div>
+            <span class="badge-live">Live</span>
+          </div>
+        </div>
+        <ul class="exp-list">
+          <li>Developed responsive web features and backend REST API integrations to improve app usability across all devices.</li>
+          <li>Contributed to a <strong>15% reduction in post-release bugs</strong> through structured debugging, testing, and deployment.</li>
+          <li>Collaborated with cross-functional teams to maintain code quality and application stability.</li>
+        </ul>
+        <div class="tech-row">
+          <span>React</span><span>Node.js</span><span>REST APIs</span><span>Git</span>
+        </div>
+      </div>
+
+      <div class="exp-card card" data-r data-d="100">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Data Analytics &amp; Visualization Intern</h3>
+            <div class="exp-company">Excelerate</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-period">Aug – Nov 2025</div>
+            <span class="badge-done">Completed</span>
+          </div>
+        </div>
+        <ul class="exp-list">
+          <li>Analyzed outreach and campaign datasets of <strong>10,000+ records</strong> — evaluated engagement metrics and user behavior trends.</li>
+          <li>Built KPI dashboards with Power BI and Excel, <strong>reducing manual reporting time by 30%</strong>.</li>
+          <li>Recognised as <strong>Star Performer</strong> and awarded a <strong>$1,000 Performance Scholarship</strong>.</li>
+        </ul>
+        <div class="tech-row">
+          <span>Power BI</span><span>Excel</span><span>Data Analytics</span><span>KPI Dashboards</span>
+        </div>
+      </div>
+
+      <div class="exp-card card" data-r data-d="200">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Web Development Intern</h3>
+            <div class="exp-company">Micro IT Solutions <span style="font-size:.78rem;color:var(--txt2);font-weight:400;">(Micro Information Technology Services)</span></div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-period">May 2025 &ndash; Jun 2025</div>
+            <span class="badge-done">Completed</span>
+          </div>
+        </div>
+        <ul class="exp-list">
+          <li>Developed and maintained web application components using modern development tools and frameworks.</li>
+          <li>Assisted in building and integrating <strong>RESTful APIs</strong> to enable smooth communication between frontend and backend systems.</li>
+          <li>Participated in debugging, testing, and optimising application performance to improve reliability and user experience.</li>
+          <li>Collaborated with the development team using <strong>Git version control</strong> to manage code changes and maintain project workflow.</li>
+        </ul>
+        <div class="tech-row">
+          <span class="t-amber">HTML</span><span class="t-sky">CSS</span><span class="t-blue">JavaScript</span><span class="t-green">Git</span><span class="t-indigo">REST APIs</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <span class="sec-label">Skills</span>
+      <h2 class="sec-title">Technical <span class="accent">Expertise</span></h2>
+    </div>
+
+    <div class="skills-wrap">
+
+      <div class="card skill-card" data-r>
+        <h4 class="sk-head">Languages &amp; Frameworks</h4>
+        <div class="sk-tag-grid">
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"/>JavaScript</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>React.js</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>Python</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node"/>Node.js</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/>Flutter</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"/>Kotlin</div>
+        </div>
+      </div>
+
+      <div class="card skill-card" data-r data-d="100">
+        <h4 class="sk-head">Databases &amp; Tools</h4>
+        <div class="sk-tag-grid">
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>MySQL</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>MongoDB</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>Git &amp; GitHub</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>HTML / CSS</div>
+        </div>
+
+        <h4 class="sk-head">Tools &amp; Platforms</h4>
+        <div class="sk-tag-grid">
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>Figma</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>Docker</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>VS Code</div>
+          <div class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"/>Postman</div>
+          <div class="sk-tag t-accent">
+            <svg width="16" height="16" viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="3" fill="#F2C811"/>
+              <path d="M8 22L16 10l8 12" stroke="#000" stroke-width="2" fill="none"/>
+            </svg>
+            Power BI
+          </div>
+          <div class="sk-tag t-green">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#1D6F42"><rect rx="2" width="24" height="24"/><path d="M7 7h4v10H7zM13 7h4l2 5-2 5h-4l2-5z" fill="#fff"/></svg>
+            Excel
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" class="section proj-section">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <span class="sec-label">Projects</span>
+      <h2 class="sec-title">Featured <span class="accent">Work</span></h2>
+    </div>
+
+    <div class="proj-grid">
+
+      <div class="card proj-card" data-r>
+        <div class="proj-img-wrap">
+          <div class="proj-tags">
+            <span>Flutter</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+          </div>
+          <img src="proj_pharmacy.png" alt="Pharmacy Management System" class="proj-img"/>
+        </div>
+        <div class="proj-content">
+          <h3>Pharmacy Management System</h3>
+          <p>Full-stack healthcare platform handling role-based authentication, prescription tracking, and patient record management. Features secure JWT tokens and REST API integration with optimised MySQL queries for smooth operations across devices.</p>
+          <div class="proj-links">
+            <a href="https://github.com/NAGURVALI42" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" class="proj-gh-ico" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Code
+            </a>
+            <a href="https://linkedin.com/in/nagurvali-shaik-505469288/" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              Post
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card proj-card" data-r data-d="100">
+        <div class="proj-img-wrap">
+          <div class="proj-tags">
+            <span>Kotlin</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+          <img src="proj_school.png" alt="School Notices Application" class="proj-img"/>
+        </div>
+        <div class="proj-content">
+          <h3>School Notices Application</h3>
+          <p>Native Android communication platform enabling real-time notice delivery from teachers to students. Features full CRUD functionality natively built with Recycler Views, offline caching, push notifications, and seamless RESTful data synchronization.</p>
+          <div class="proj-links">
+            <a href="https://github.com/NAGURVALI42" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" class="proj-gh-ico" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Code
+            </a>
+            <a href="https://linkedin.com/in/nagurvali-shaik-505469288/" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              Post
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card proj-card" data-r data-d="200">
+        <div class="proj-img-wrap">
+          <div class="proj-tags">
+            <span>Power BI</span>
+            <span>Excel</span>
+          </div>
+          <img src="proj_dashboard.png" alt="Data Professional Survey Dashboard" class="proj-img"/>
+        </div>
+        <div class="proj-content">
+          <h3>Data Professional Survey Dashboard</h3>
+          <p>Interactive Power BI analytics dashboard built to track global salary trends, job roles, and industry insights across 5,000+ survey responses. Preprocessed large datasets natively within Excel and implemented dynamic KPI drill-through filters.</p>
+          <div class="proj-links">
+            <a href="https://github.com/NAGURVALI42" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" class="proj-gh-ico" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Code
+            </a>
+            <a href="https://linkedin.com/in/nagurvali-shaik-505469288/" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              Post
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card proj-card" data-r data-d="300">
+        <div class="proj-img-wrap">
+          <div class="proj-tags">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Pandas</span>
+          </div>
+          <img src="proj_social.png" alt="Social Media ML Prediction" class="proj-img"/>
+        </div>
+        <div class="proj-content">
+          <h3>Social Media Engagement Prediction (Research)</h3>
+          <p>Research-based ML study comparing XGBoost, Random Forest, and Logistic Regression to predict engagement. Evaluated models using metrics such as Accuracy, MAE, and R², alongside independent sample T-Tests to identify the optimal modeling approach.</p>
+          <div class="proj-links">
+            <a href="https://github.com/NAGURVALI42" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" class="proj-gh-ico"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              Code
+            </a>
+            <a href="https://linkedin.com/in/nagurvali-shaik-505469288/" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              Post
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="see-more" data-r>
+      <a href="https://github.com/NAGURVALI42" target="_blank" class="cta-ghost" id="seeMore">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        View All Projects on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ AWARDS & CERTIFICATIONS ══════════ -->
+<section id="awards" class="section">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <span class="sec-label">Milestones</span>
+      <h2 class="sec-title">Certifications &amp; <span class="accent">Awards</span></h2>
+    </div>
+
+    <div class="award-grid">
+      <!-- Award 1: Star Performer -->
+      <div class="card award-card" data-r>
+        <div class="award-img-wrap">
+          <img src="star.png" alt="Star Performer Award Certificate" class="award-img"/>
+        </div>
+        <div class="award-content">
+          <div class="aw-icon">
+            <svg viewBox="0 0 24 24" fill="none" class="aw-svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+          </div>
+          <h3>Star Performer Award</h3>
+          <p class="award-co">Excelerate &nbsp;·&nbsp; 2025</p>
+          <p>Recognised for outstanding performance in data analytics. Awarded a <strong>$1,000 Performance Scholarship</strong> — one of the top performers in the cohort.</p>
+          <div class="aw-badge-wrap">
+            <span class="aw-badge">TOP PERFORMER</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Award 2: Best Poster -->
+      <div class="card award-card" data-r data-d="100">
+        <div class="award-img-wrap">
+          <img src="Award.jpeg" alt="Best Poster Award Certificate" class="award-img"/>
+        </div>
+        <div class="award-content">
+          <div class="aw-icon">
+            <svg viewBox="0 0 24 24" fill="none" class="aw-svg" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"></rect><path d="M16 8V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M12 11v3"></path><path d="M10 12.5h4"></path></svg>
+          </div>
+          <h3>Best Poster Award</h3>
+          <p class="award-co">SIMATS 2025 Tech Star Summit &nbsp;·&nbsp; 2025</p>
+          <p>Awarded <strong>Best Poster</strong> at the SIMATS 2025 Tech Star Summit for excellence in research presentation and innovation.</p>
+          <div class="aw-badge-wrap">
+            <span class="aw-badge">BEST POSTER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="sec-head" data-r>
+      <span class="sec-label">Contact</span>
+      <h2 class="sec-title">Let's Work <span class="accent">Together</span></h2>
+    </div>
+    <p class="sec-sub" data-r>Open to full-time positions, internships, and freelance contracts. Drop me a message.</p>
+
+    <div class="contact-layout">
+      <div class="contact-left" data-r>
+
+        <a href="mailto:nagurvali219@gmail.com" class="ci-row" id="ct-ml">
+          <div class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div><div class="ci-label">Email</div><div class="ci-value">nagurvali219@gmail.com</div></div>
+        </a>
+
+        <a href="tel:+919392055176" class="ci-row" id="ct-ph">
+          <div class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div><div class="ci-label">Phone</div><div class="ci-value">+91 93920 55176</div></div>
+        </a>
+
+        <div class="ci-row" id="ct-loc">
+          <div class="ci-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div><div class="ci-label">Location</div><div class="ci-value">Guntur, Andhra Pradesh 522016</div></div>
+        </div>
+
+        <div class="soc-grid">
+          <a href="https://github.com/NAGURVALI42" target="_blank" class="soc-item" id="ct-gh">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/nagurvali-shaik-505469288/" target="_blank" class="soc-item" id="ct-li">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/nagurvali42/" target="_blank" class="soc-item" id="ct-ig">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="NAGURVALI_RESUME.pdf" class="soc-item soc-accent" download id="ct-cv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="12" x2="12" y2="18"/><polyline points="9 15 12 18 15 15"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <form class="card contact-form" id="cForm" data-r data-d="150" novalidate>
+        <h3>Send a Message</h3>
+        <div class="form-duo">
+          <div class="fg"><label for="f-name">Name</label><input type="text" id="f-name" placeholder="Your name" required/></div>
+          <div class="fg"><label for="f-email">Email</label><input type="email" id="f-email" placeholder="you@email.com" required/></div>
+        </div>
+        <div class="fg"><label for="f-sub">Subject</label><input type="text" id="f-sub" placeholder="Let's collaborate…"/></div>
+        <div class="fg"><label for="f-msg">Message</label><textarea id="f-msg" rows="5" placeholder="Tell me about the project or role…" required></textarea></div>
+        <button type="submit" class="form-btn" id="fBtn">
+          <span id="fBtnTxt">Send Message</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+        <div class="form-success" id="fOk">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Message sent. I will get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-row">
+    <div class="ft-logo">
+      <a href="#hero" class="brand" id="brand-footer">N<span>S</span></a>
+    </div>
+    <div class="ft-mid">
+      <p>Designed &amp; developed by <strong>Nagurvali Shaik</strong></p>
+      <p class="ft-copy">Full Stack Developer &amp; Freelancer &nbsp;·&nbsp; Guntur, AP &nbsp;·&nbsp; 2025</p>
+    </div>
+    <div class="ft-links">
+      <a href="https://github.com/NAGURVALI42" target="_blank" id="ft-gh">GitHub</a>
+      <a href="https://www.linkedin.com/in/nagurvali-shaik-505469288/" target="_blank" id="ft-li">LinkedIn</a>
+      <a href="mailto:nagurvali219@gmail.com" id="ft-ml">Gmail</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
